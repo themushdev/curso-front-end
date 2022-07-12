@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4a1c8fd6b2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="logo">
+                <img src="./img/logo-black.svg" alt="logo" width="130px">
+            </div>
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a href="./sobre.html">Sobre</a>
+                <a href="./contato.html">Contato</a>
+                <a class="botao-menu" href="./cafes.html">Conheça nossos cafés</a>
+            </div>
+            <div class="menu-mobile">
+                <i class="fa-solid fa-bars menu-mobile-icon"></i>
+                <div class="menu-items">
+                    <a href="./index.html">Home</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./contato.html">Contato</a>
+                    <a href="./cafes.html">Nossos Cafés</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-cafe">
+        <div class="center">
+            <div class="cta-main-cafe">
+                <h2>Nossos cafés</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-cafe-m">
+        <div class="center">
+            <img class="mogiana" src="./img/mogiana-1.png" alt="cafe mogiana">
+            <div class="cafe-1">
+                <h2>Café Mogiana</h2>
+                <p>Tradicional produtora de cafés situada ao Norte do estado de São Paulo, Mogiana possui características climáticas propícias para o amadurecimento lento e uniforme do grão.</p>
+               
+                <p>A região é conhecida por produzir café da espécie arábica e grãos mais finos.</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="sobre-cafe-c">
+        <div class="center">
+            <div class="cafe-1">
+                <h2>Café Sul de Minas</h2>
+                <p>Um café de corpo médio e acidez cítrica alta. Uma bebida adocicada, de intensidade 8, com notas florais e cítricas e aroma frutado.</p>
+
+                <p>Descubra os cafés Terra da linha torrado e moído, com uma torra rica e moagem no ponto certo. Uma combinação de grãos elaboradas por especialistas em café que irá despertar seus sentidos.</p>
+            </div>
+            <img class="mogiana" src="./img/suldeminas-1.png" alt="cafe mogiana">
+        </div>
+    </section>
+
+    <section class="sobre-cafe-s">
+        <div class="center">
+            <img class="mogiana" src="./img/cerrado-1.png" alt="cafe mogiana">
+            <div class="cafe-1">
+                <h2>Café Cerrado</h2>
+                <p>Um café encorpado e com aroma intenso. Uma bebida de leve acidez, com sabor doce e notas de chocolate.</p>
+
+                <p>Descubra os cafés torrados e moídos Terra, com uma torra rica e moagem no ponto certo. Uma combinação de grãos elaborada por especialistas em café que irá despertar seus sentidos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./img/logo-black.svg" alt="logo" width="130px">
+        <p>Desenvolvido por Digi Comunicação | Todos os Direitos Reservados</p>
+    </footer>
+
+    <script>
+
+        var el = document.querySelector('.menu-mobile-icon')
+
+        el.addEventListener('click',()=>{
+            var menuItems = document.querySelector('.menu-items');
+            if(menuItems.classList.contains('show')){
+                menuItems.classList.add('hide');
+                menuItems.classList.remove('show');
+            }else{
+                menuItems.classList.add('show');
+                menuItems.classList.remove('hide');
+            }
+        });
+
+    </script>
+
+</body>
+</html>
