@@ -36,7 +36,8 @@ são ramificações / versões paralelas
 - develop
 - DOD Definition of Done: critérios de aceite
 - versionamento 1.0.0
-- git checkout -b dev (cria uma branch) git checkout master (mudar de branch)
+- git checkout -b dev (cria uma branch) 
+- git checkout master/main (mudar de branch)
 
 # Merge
 - checar se houve alteração na Main antes de subir o código com: git fetch --all
