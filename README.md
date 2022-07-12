@@ -53,6 +53,6 @@ Permite code review
 O respositório resolve os conflitos automaticamente
 
 configura o GitFlow
-1 - git flow init 
-2 - git flow feature start {nome-da-feature}
-3 - git flow feature finish {nome-da-feature}
+- git flow init 
+- git flow feature start {nome-da-feature}
+- git flow feature finish {nome-da-feature}
